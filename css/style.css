@@ -3,12 +3,8 @@
   margin: 0;
 }
 
-@media screen and (min-width: 0px) and (max-width: 367px) {
+@media screen and (min-width: 0px) and (max-width: 567px) {
   body {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    gap: 20px;
     background-color: #292D33;
   }
   body h1 {
@@ -30,12 +26,7 @@
     align-items: center;
   }
   body .div-sitios {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 300px;
-    max-height: 250px;
+    padding: 25px;
   }
   body .div-sitios h2 {
     text-transform: uppercase;
@@ -48,13 +39,13 @@
     border: solid 2px #CCC;
     box-shadow: 5px 5px 5px 0px #cccccc;
     border-radius: 5px;
-    padding: 10px;
     max-width: 300px;
     max-height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px;
   }
   body .div-contenido .cta {
     position: relative;
@@ -66,7 +57,6 @@
     text-decoration: none;
   }
   body .div-contenido .cta span {
-    display: flex;
     position: relative;
     font-family: "Ubuntu", sans-serif;
     font-size: 11px;
@@ -88,36 +78,17 @@
     height: 6px;
     width: 12px;
   }
-  body .div-contenido .cta:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: #b1dae7;
-    width: 30px;
-    height: 30px;
-    transition: all 0.3s ease;
-  }
-  body .div-contenido .cta:hover:before {
-    width: 100%;
-    background: #b1dae7;
-  }
-  body .div-contenido .cta:hover svg {
-    transform: translateX(0);
-  }
-  body .div-contenido .cta:active {
-    transform: scale(0.95);
+  body footer {
+    padding-top: 50px;
   }
   body footer h4 {
-    color: #CCC;
+    color: #fff;
     text-align: center;
     font-family: "Roboto", sans-serif;
     padding-top: 100px;
   }
 }
-@media screen and (min-width: 368px) and (max-width: 767px) {
+@media screen and (min-width: 568px) and (max-width: 767px) {
   body {
     display: grid;
     grid-template-columns: 1fr;
@@ -131,6 +102,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     height: 100%;
+    padding: 15px;
   }
   body section .div-sitios h2 {
     text-transform: uppercase;
@@ -359,10 +331,6 @@
 }
 @media screen and (min-width: 0px) and (max-width: 367px) {
   body {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 10px;
-    justify-content: center;
     background-color: #292D33;
   }
   body section .container-principal-btn {
@@ -375,10 +343,6 @@
     text-align: center;
     font-size: 12px;
   }
-  body section .div-btn {
-    display: flex;
-    justify-content: center;
-  }
   body section .div-help {
     display: flex;
     align-items: center;
@@ -389,8 +353,13 @@
     display: flex;
     justify-content: center;
   }
+  body footer {
+    background-color: gray;
+  }
   body footer h4 {
-    font-size: 10px;
+    color: aqua;
+    font-size: 15px;
+    margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 368px) and (max-width: 767px) {
