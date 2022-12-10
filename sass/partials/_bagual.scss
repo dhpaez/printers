@@ -1,0 +1,126 @@
+//mobile view
+@media screen and (min-width:0px) and (max-width: 367px) {
+
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-content: center;
+        background-color: #292D33;
+        
+        section{
+
+
+        
+            .container-principal-btn{
+    
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+    
+            }
+            .title-area{
+                color: #fff;
+                text-align: center;
+                font-size: 12px;
+            }
+            .div-btn{
+                display: flex;
+                justify-content: center;
+            }
+            .div-help{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 20px;
+                div{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+        footer{
+            h4{
+                font-size: 10px;
+            }
+        }
+    }
+
+    
+}
+
+//tablet view
+@media screen and (min-width:368px) and (max-width: 767px) {
+
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        justify-content: center;
+        background-color: #292D33;
+        
+        section{
+
+
+        
+            .container-principal-btn{
+    
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+    
+            }
+            .title-area{
+                color: #fff;
+                text-align: center;
+            }
+            .div-btn{
+                display: flex;
+                justify-content: center;
+            }
+            .div-help{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 20px;
+                div{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+    
+}
+//Desktop view
+@media screen and (min-width:768px){
+
+    section{
+        
+        .container-principal-btn{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+
+        }
+        .title-area{
+            color: #fff;
+            text-align: center;
+        }
+        .div-btn{
+            display: flex;
+            justify-content: center;
+        }
+        .div-help{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 20px;
+            div{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

@@ -3,18 +3,258 @@
   margin: 0;
 }
 
-@media screen and (min-width: 0px) and (min-width: 767px) {
+@media screen and (min-width: 0px) and (max-width: 367px) {
   body {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    background-color: #292D33;
+  }
+  body h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+  }
+  body p {
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 50px;
+    font-size: 10px;
+  }
+  body .div-principal {
+    padding: 30px 50px 0px 50px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  body .div-sitios {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 300px;
+    max-height: 250px;
+  }
+  body .div-sitios h2 {
+    text-transform: uppercase;
+    font: bolder;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+  }
+  body .div-contenido {
+    background-color: #fff;
+    border: solid 2px #CCC;
+    box-shadow: 5px 5px 5px 0px #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 300px;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .div-contenido .cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    text-decoration: none;
+  }
+  body .div-contenido .cta span {
+    display: flex;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+  }
+  body .div-contenido .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+    height: 6px;
+    width: 12px;
+  }
+  body .div-contenido .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+  }
+  body .div-contenido .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+  }
+  body .div-contenido .cta:hover svg {
+    transform: translateX(0);
+  }
+  body .div-contenido .cta:active {
+    transform: scale(0.95);
+  }
+  body footer h4 {
+    color: #CCC;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 368px) and (max-width: 767px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
     justify-content: center;
     background-color: #292D33;
   }
+  body section .div-sitios {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 100%;
+  }
+  body section .div-sitios h2 {
+    text-transform: uppercase;
+    font: bolder;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+  }
+  body section h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+  }
+  body section p {
+    color: #fff;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding-bottom: 50px;
+    font-size: 10px;
+  }
+  body section .title-area {
+    color: #fff;
+    text-align: center;
+  }
+  body section .div-btn {
+    display: flex;
+    justify-content: center;
+  }
+  body section .div-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  body section .div-help div {
+    display: flex;
+    justify-content: center;
+  }
+  body section .div-contenido {
+    background-color: #fff;
+    border: solid 2px #CCC;
+    box-shadow: 5px 5px 5px 0px #cccccc;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 300px;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body section .cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    text-decoration: none;
+  }
+  body section .cta span {
+    display: flex;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+  }
+  body section .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+    height: 6px;
+    width: 12px;
+  }
+  body section .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease;
+  }
+  body section .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+  }
+  body section .cta:hover svg {
+    transform: translateX(0);
+  }
+  body section .cta:active {
+    transform: scale(0.95);
+  }
+  body footer h4 {
+    color: #CCC;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    padding-top: 100px;
+  }
 }
 @media screen and (min-width: 767px) {
-  body {
-    display: flex;
+  header nav {
     background-color: #292D33;
+  }
+  header nav img {
+    background-color: blue;
+    background-size: 175px 30px;
+  }
+  body {
+    background-color: #292D33;
+  }
+  body section {
+    padding: 20px 40px 0px 40px;
   }
   body .div-principal {
     padding: 30px 50px 0px 50px;
@@ -22,6 +262,8 @@
   body h1 {
     color: #fff;
     text-align: center;
+    padding-bottom: 40px;
+    font-size: 45px;
   }
   body h2 {
     text-transform: uppercase;
@@ -32,24 +274,180 @@
     color: #fff;
     text-align: center;
     font-family: "Roboto", sans-serif;
+    padding-bottom: 50px;
+    font-size: 35px;
   }
   body .div-sitios {
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    gap: 20px;
     height: 100%;
   }
   body .div-contenido {
     background-color: #fff;
-    border: solid 3px #CCC;
+    border: solid 2px #CCC;
     box-shadow: 5px 5px 5px 0px #cccccc;
     border-radius: 5px;
     padding: 10px;
-    display: flex;
-    justify-content: center;
     max-width: 300px;
     max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body .div-contenido .cta {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    text-decoration: none;
+  }
+  body .div-contenido .cta span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+  }
+  body .div-contenido .cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+    height: 8px;
+    width: 13px;
+  }
+  body .div-contenido .cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+  }
+  body .div-contenido .cta:hover:before {
+    width: 100%;
+    background: #b1dae7;
+  }
+  body .div-contenido .cta:hover svg {
+    transform: translateX(0);
+  }
+  body .div-contenido .cta:active {
+    transform: scale(0.95);
+  }
+  footer h4 {
+    text-align: center;
+    color: #fff;
+    margin-top: 200px;
+    font-family: "Roboto", sans-serif;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 367px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+    background-color: #292D33;
+  }
+  body section .container-principal-btn {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  body section .title-area {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+  }
+  body section .div-btn {
+    display: flex;
+    justify-content: center;
+  }
+  body section .div-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  body section .div-help div {
+    display: flex;
+    justify-content: center;
+  }
+  body footer h4 {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 368px) and (max-width: 767px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-content: center;
+    background-color: #292D33;
+  }
+  body section .container-principal-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  body section .title-area {
+    color: #fff;
+    text-align: center;
+  }
+  body section .div-btn {
+    display: flex;
+    justify-content: center;
+  }
+  body section .div-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  body section .div-help div {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  section .container-principal-btn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  section .title-area {
+    color: #fff;
+    text-align: center;
+  }
+  section .div-btn {
+    display: flex;
+    justify-content: center;
+  }
+  section .div-help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  section .div-help div {
+    display: flex;
+    justify-content: center;
   }
 }
 

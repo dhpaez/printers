@@ -1,26 +1,294 @@
 //mobile view
-@media screen and (min-width:0px) and (min-width:767px) {
+@media screen and (min-width:0px) and (max-width: 367px) {
 
     body{
-        display: flex;
-        flex-direction: column;
+            display: grid; 
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;  
+            gap: 20px;
+            background-color: #292D33;
+            h1{
+                color: #fff;
+                text-align: center;
+                font-size: 15px;
+            }
+        p{
+            color: #fff;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+            padding-bottom: 50px;
+            font-size: 10px;
+        }
+        .div-principal{
+            padding: 30px 50px 0px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+        .div-sitios{
+            display: grid; 
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr;  
+            gap: 20px;
+            max-width: 300px;
+            max-height: 250px;
+            h2{
+                text-transform: uppercase;
+                font: bolder;
+                font-family: 'Roboto', sans-serif;
+                font-size: 15px;
+            }
+
+        }
+        .div-contenido{
+            background-color: #fff;
+            border: solid 2px #CCC;
+            box-shadow: 5px 5px 5px 0px #cccccc;
+            border-radius: 5px;
+            padding: 10px;
+            max-width: 300px;
+            max-height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .cta {
+                position: relative;
+                margin: auto;
+                padding: 12px 18px;
+                transition: all 0.2s ease;
+                border: none;
+                background: none;
+                text-decoration: none;
+                span {
+                    display: flex;
+                    position: relative;
+                    font-family: "Ubuntu", sans-serif;
+                    font-size: 11px;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    color: #234567;
+                }
+                svg {
+                    position: relative;
+                    top: 0;
+                    margin-left: 10px;
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke: #234567;
+                    stroke-width: 2;
+                    transform: translateX(-5px);
+                    transition: all 0.3s ease;
+                    height:6px; 
+                    width:12px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    border-radius: 50px;
+                    background: #b1dae7;
+                    width: 30px;
+                    height: 30px;
+                    transition: all 0.3s ease;
+                }
+                &:hover:before {
+                    width: 100%;
+                    background: #b1dae7;
+                }
+                &:hover svg {
+                    transform: translateX(0);
+                }
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+        footer{
+
+            h4{
+                color: #CCC;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                padding-top: 100px;
+
+            }
+        }
+    }
+    
+}
+//tablet view
+@media screen and (min-width:368px) and (max-width: 767px) {
+
+    body{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
         justify-content: center;
         background-color: #292D33;
+        
+        section{
+
+            .div-sitios{
+                display: grid; 
+                grid-template-rows: 1fr 1fr;
+                grid-template-columns: 1fr 1fr 1fr;  
+                gap: 20px;
+                height: 100%;
+                h2{
+                        text-transform: uppercase;
+                        font: bolder;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 15px;
+                }
+            }
+            h1{
+                color: #fff;
+                text-align: center;
+                font-size: 15px;
+            }
+            p{
+                color: #fff;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                padding-bottom: 50px;
+                font-size: 10px;
+            }
+            .title-area{
+                color: #fff;
+                text-align: center;
+            }
+            .div-btn{
+                display: flex;
+                justify-content: center;
+            }
+            .div-help{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-top: 20px;
+                div{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+            .div-contenido{
+                background-color: #fff;
+                border: solid 2px #CCC;
+                box-shadow: 5px 5px 5px 0px #cccccc;
+                border-radius: 5px;
+                padding: 10px;
+                max-width: 300px;
+                max-height: 250px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .cta {
+                position: relative;
+                margin: auto;
+                padding: 12px 18px;
+                transition: all 0.2s ease;
+                border: none;
+                background: none;
+                text-decoration: none;
+                span {
+                    display: flex;
+                    position: relative;
+                    font-family: "Ubuntu", sans-serif;
+                    font-size: 11px;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    color: #234567;
+                }
+                svg {
+                    position: relative;
+                    top: 0;
+                    margin-left: 10px;
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke: #234567;
+                    stroke-width: 2;
+                    transform: translateX(-5px);
+                    transition: all 0.3s ease;
+                    height:6px; 
+                    width:12px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    border-radius: 50px;
+                    background: #b1dae7;
+                    width: 30px;
+                    height: 30px;
+                    transition: all 0.3s ease;
+                }
+                &:hover:before {
+                    width: 100%;
+                    background: #b1dae7;
+                }
+                &:hover svg {
+                    transform: translateX(0);
+                }
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+        footer{
+
+            h4{
+                color: #CCC;
+                text-align: center;
+                font-family: 'Roboto', sans-serif;
+                padding-top: 100px;
+
+            }
+        }
     }
     
 }
 //desktop view
 @media screen and (min-width:767px){
 
+        
+    header{
+        nav{
+            background-color: #292D33;
+            img{
+                background-color: blue; 
+                background-size: 175px 30px;
+               
+            }
+        }
+    }  
+
     body{
-        display: flex;
+        
         background-color: #292D33;
+        section{
+            padding: 20px 40px 0px 40px;
+
+        }
+        
         .div-principal{
             padding: 30px 50px 0px 50px;
+           
         }
         h1{
             color: #fff;
             text-align: center;
+            padding-bottom: 40px;
+            font-size: 45px;
         }
         h2{
             text-transform: uppercase;
@@ -31,29 +299,90 @@
             color: #fff;
             text-align: center;
             font-family: 'Roboto', sans-serif;
+            padding-bottom: 50px;
+            font-size: 35px;
         }
         .div-sitios{
             display: grid; 
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr 1fr 1fr;  
-            gap: 10px;
+            gap: 20px;
             height: 100%;
 
         }
         .div-contenido{
             background-color: #fff;
-            border: solid 3px #CCC;
+            border: solid 2px #CCC;
             box-shadow: 5px 5px 5px 0px #cccccc;
             border-radius: 5px;
             padding: 10px;
-            display: flex;
-            justify-content: center;
             max-width: 300px;
             max-height: 250px;
-
-
-
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .cta {
+                position: relative;
+                margin: auto;
+                padding: 12px 18px;
+                transition: all 0.2s ease;
+                border: none;
+                background: none;
+                text-decoration: none;
+                span {
+                    position: relative;
+                    font-family: "Ubuntu", sans-serif;
+                    font-size: 18px;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    color: #234567;
+                }
+                svg {
+                    position: relative;
+                    top: 0;
+                    margin-left: 10px;
+                    fill: none;
+                    stroke-linecap: round;
+                    stroke-linejoin: round;
+                    stroke: #234567;
+                    stroke-width: 2;
+                    transform: translateX(-5px);
+                    transition: all 0.3s ease;
+                    height:8px; 
+                    width:13px;
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    border-radius: 50px;
+                    background: #b1dae7;
+                    width: 45px;
+                    height: 45px;
+                    transition: all 0.3s ease;
+                }
+                &:hover:before {
+                    width: 100%;
+                    background: #b1dae7;
+                }
+                &:hover svg {
+                    transform: translateX(0);
+                }
+                &:active {
+                    transform: scale(0.95);
+                }
+            }
+        }
+    }
+    footer{
+        h4{
+            text-align: center;
+            color:#fff;
+            margin-top: 200px;
+            font-family: 'Roboto', sans-serif;
         }
     }
 }
