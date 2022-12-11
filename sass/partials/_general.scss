@@ -1,5 +1,15 @@
 //mobile view
 @media screen and (min-width:0px) and (max-width: 567px) {
+    header{
+        nav{
+            background-color: #292D33;
+            img{
+                background-color: #0F059E; 
+                background-size: 130px 25px;
+               
+            }
+        }
+    }  
 
     body{
 
@@ -93,6 +103,16 @@
 }
 //tablet view
 @media screen and (min-width:568px) and (max-width: 767px) {
+    header{
+        nav{
+            background-color: #292D33;
+            img{
+                background-color: #0F059E; 
+                background-size: 160px 30px;
+               
+            }
+        }
+    }  
 
     body{
         display: grid;
@@ -236,7 +256,7 @@
         nav{
             background-color: #292D33;
             img{
-                background-color: blue; 
+                background-color: #0F059E; 
                 background-size: 175px 30px;
                
             }
