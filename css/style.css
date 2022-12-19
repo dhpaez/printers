@@ -336,6 +336,11 @@
   body .div-contenido .cta:active {
     transform: scale(0.95);
   }
+  footer {
+    background-color: #CCC;
+    height: 200px;
+    width: 100%;
+  }
   footer h4 {
     text-align: center;
     color: #fff;
